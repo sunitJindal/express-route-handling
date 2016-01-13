@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title Sample project
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    ul.list-inline
+      li
+        a(href=webUrls.getUrl('home'))=webUrls.getName('home')
+      li
+        a(href=webUrls.getUrl('landing','LIST'))=webUrls.getName('landing')
+
+    block content

@@ -1,0 +1,7 @@
+extends ../layouts/base
+block content
+  h1= title
+  ul
+    each landingItem,landingKey in list
+      li #{landingItem}
+        a(href=webUrls.expand('landing','DETAIL',{id:landingKey}))=webUrls.getName('landing','DETAIL')
